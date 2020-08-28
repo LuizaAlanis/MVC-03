@@ -2,7 +2,7 @@
 <i> Aplicação n° 3 </i>
 <i> Aplicação n° 3 </i>
 <br> <br>
-<img src="https://github.com/LuizaAlanis/MVC-02/blob/master/capa.png"/>
+<img src="https://github.com/LuizaAlanis/MVC-03/blob/master/template.png"/>
 <h2> Oque foi feito? </h2>
 <ul>
   <li>Criei uma aplicação web ASP.NET (.NET Framework) no Visual Studio</li>
@@ -17,5 +17,5 @@
   <li>Rodei o projeto no meu navegador (Edge no caso)</li>
 </ul>
 <br>
-<i>A imagem usada na aplicação é livre e foi baixada em https://unsplash.com/</i>
+<i>A imagem usada na aplicação é livre e foi baixada em https://unsplash.com/</i> <br>
 Status do Projeto: Concluido :heavy_check_mark:
