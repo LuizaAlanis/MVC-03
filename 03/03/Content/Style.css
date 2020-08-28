@@ -1,0 +1,162 @@
+﻿.parallax {
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+    background-image:url(../img1.jpg);
+    background-size: cover;
+}
+::-webkit-scrollbar-track {
+    background-color: #e4e1dc;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #e4e1dc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(19, 118, 184);
+    border-radius: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu h1 {
+    font-family: 'Segoe UI';
+    font-size: 3vw;
+}
+
+.menu {
+    width: 100%;
+    font-family: 'Segoe UI';
+    font-size: 3vw;
+}
+
+    .menu ul {
+        list-style: none;
+        position: relative;
+    }
+
+        .menu ul li {
+            width: 20%;
+            float: left;
+        }
+
+        .menu ul ul li {
+            width: 200px;
+            float: none;
+        }
+
+    .menu a {
+        padding: 15px;
+        margin: 0;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background-color: rgb(1, 89, 148);
+        color: #ffffff;
+    }
+
+    .menu ul ul {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .menu ul li:hover ul {
+        visibility: visible;
+    }
+
+    .menu a:hover {
+        background-color: rgb(17, 120, 189);
+        -webkit-transition: 0.5s ease-out;
+        -moz-transition: 0.5s ease-out;
+        -o-transition: 0.5s ease-out;
+        transition: 0.5s ease-out;
+    }
+
+    .menu ul ul li a {
+        background-color: rgb(19, 118, 184);
+    }
+
+        .menu ul ul li a:hover {
+            background-color: rgb(15, 130, 207);
+            -webkit-transition: 0.5s ease-out;
+            -moz-transition: 0.5s ease-out;
+            -o-transition: 0.5s ease-out;
+            transition: 0.5s ease-out;
+        }
+
+label[for="bt_menu"] {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(1, 89, 148);
+    font-family: 'Segoe UI';
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+#bt_menu {
+    display: none;
+}
+
+@media(max-width:800px) {
+    label[for="bt_menu"] {
+        display: block;
+    }
+
+    #bt_menu:checked ~ .menu {
+        margin-left: 0;
+    }
+
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+
+        .menu ul li {
+            width: 100%;
+            float: none;
+        }
+
+        .menu ul ul {
+            position: static;
+            overflow: hidden;
+            max-height: 0;
+            transition: all .4s;
+        }
+
+        .menu ul li:hover ul {
+            height: auto;
+            max-height: 200px;
+            width: 100%;
+        }
+
+        .menu ul ul li {
+            width: 100%;
+            float: left;
+        }
+}
+
+h2 {
+    font-family: 'Segoe UI';
+    font-size: 4vw;
+    margin-top: 5%;
+    margin-left: 10%
+}
+
+p {
+    font-family: 'Segoe UI';
+    font-size: 3vw;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
